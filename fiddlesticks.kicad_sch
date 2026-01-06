@@ -2280,12 +2280,11 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Diode:SS14"
+		(symbol "Diode:PMEG2010AEH"
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
-				(offset 1.016)
 				(hide yes)
 			)
 			(exclude_from_sim no)
@@ -2299,7 +2298,7 @@
 					)
 				)
 			)
-			(property "Value" "SS14"
+			(property "Value" "PMEG2010AEH"
 				(at 0 -2.54 0)
 				(effects
 					(font
@@ -2307,7 +2306,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Diode_SMD:D_SMA"
+			(property "Footprint" "Diode_SMD:D_SOD-123F"
 				(at 0 -4.445 0)
 				(effects
 					(font
@@ -2316,7 +2315,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PMEG2010AEH_PMEG2010AET.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2325,7 +2324,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "40V 1A Schottky Diode, SMA"
+			(property "Description" "20V, 1A very low Vf MEGA Schottky barrier rectifier, SOD-123F"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2334,7 +2333,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "diode Schottky"
+			(property "ki_keywords" "forward voltage diode"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2343,7 +2342,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "D*SMA*"
+			(property "ki_fp_filters" "D*SOD?123F*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2352,13 +2351,13 @@
 					(hide yes)
 				)
 			)
-			(symbol "SS14_0_1"
+			(symbol "PMEG2010AEH_0_1"
 				(polyline
 					(pts
 						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
 					)
 					(stroke
-						(width 0.254)
+						(width 0.2032)
 						(type default)
 					)
 					(fill
@@ -2370,7 +2369,7 @@
 						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
 					)
 					(stroke
-						(width 0.254)
+						(width 0.2032)
 						(type default)
 					)
 					(fill
@@ -2390,7 +2389,7 @@
 					)
 				)
 			)
-			(symbol "SS14_1_1"
+			(symbol "PMEG2010AEH_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -6670,6 +6669,12 @@
 		(uuid "83a4643e-0c92-4dec-9943-1470b5fb65b6")
 	)
 	(junction
+		(at 133.35 182.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "83d49477-8eb8-4f60-954e-ea6de1031cab")
+	)
+	(junction
 		(at 148.59 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6680,6 +6685,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "89e93942-7f7c-47c0-b880-030112668a8d")
+	)
+	(junction
+		(at 140.97 182.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8ac49ad5-f0e7-40d2-84fe-d193e8465fba")
 	)
 	(junction
 		(at 219.71 97.79)
@@ -6987,16 +6998,6 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 182.88) (xy 147.32 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "045acab9-85e8-4c88-ae77-7b96fb0c2127")
-	)
-	(wire
-		(pts
 			(xy 191.77 26.67) (xy 198.12 26.67)
 		)
 		(stroke
@@ -7074,6 +7075,16 @@
 			(type default)
 		)
 		(uuid "086a2de1-838d-495a-9e08-b7f8a0c999ba")
+	)
+	(wire
+		(pts
+			(xy 140.97 182.88) (xy 140.97 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08b05c5a-ace8-410c-8a46-eaee76c38a15")
 	)
 	(wire
 		(pts
@@ -7247,6 +7258,16 @@
 	)
 	(wire
 		(pts
+			(xy 120.65 186.69) (xy 123.19 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "149a05fe-0020-4a22-8657-70c0e67ee229")
+	)
+	(wire
+		(pts
 			(xy 114.3 81.28) (xy 115.57 81.28)
 		)
 		(stroke
@@ -7274,6 +7295,16 @@
 			(type default)
 		)
 		(uuid "16347eb2-6168-42a2-9ddc-f4b981deef14")
+	)
+	(wire
+		(pts
+			(xy 36.83 166.37) (xy 35.56 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "166bf49b-9416-45d2-b83a-578dfcda6b8c")
 	)
 	(wire
 		(pts
@@ -7417,6 +7448,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 186.69) (xy 133.35 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "228a2d65-1ccd-494e-9bc5-5064a91689b4")
+	)
+	(wire
+		(pts
 			(xy 189.23 58.42) (xy 189.23 69.85)
 		)
 		(stroke
@@ -7527,6 +7568,16 @@
 	)
 	(wire
 		(pts
+			(xy 133.35 182.88) (xy 133.35 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d3a8918-804d-44d7-9bdf-b3b0134e69e4")
+	)
+	(wire
+		(pts
 			(xy 25.4 120.65) (xy 35.56 120.65)
 		)
 		(stroke
@@ -7564,6 +7615,16 @@
 			(type default)
 		)
 		(uuid "2f426b78-2d69-4beb-9196-f409a5ecdcd4")
+	)
+	(wire
+		(pts
+			(xy 36.83 104.14) (xy 35.56 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f5bc1bc-8d3e-4a3c-926b-a2e66b9ccf1e")
 	)
 	(wire
 		(pts
@@ -7614,6 +7675,16 @@
 			(type default)
 		)
 		(uuid "34381b4e-c210-4c27-b142-72d1447321d4")
+	)
+	(wire
+		(pts
+			(xy 63.5 102.87) (xy 63.5 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35370a25-a59d-4819-a78a-35781c36db2e")
 	)
 	(wire
 		(pts
@@ -7837,16 +7908,6 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 101.6) (xy 35.56 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4a182ef6-305b-4d77-a704-96daa30de1dd")
-	)
-	(wire
-		(pts
 			(xy 219.71 36.83) (xy 218.44 36.83)
 		)
 		(stroke
@@ -7917,6 +7978,16 @@
 	)
 	(wire
 		(pts
+			(xy 133.35 182.88) (xy 140.97 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56e00035-76be-4b67-9978-cd3a3b948c6b")
+	)
+	(wire
+		(pts
 			(xy 46.99 39.37) (xy 54.61 39.37)
 		)
 		(stroke
@@ -7924,6 +7995,16 @@
 			(type default)
 		)
 		(uuid "580bbda6-1729-412f-b06a-70c841027c8d")
+	)
+	(wire
+		(pts
+			(xy 63.5 166.37) (xy 62.23 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58dfa50c-c9f7-41d1-8c0d-3c4ed451287f")
 	)
 	(wire
 		(pts
@@ -8347,6 +8428,16 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 102.87) (xy 36.83 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ac28af7-f713-412a-abe3-be77e033fa72")
+	)
+	(wire
+		(pts
 			(xy 106.68 88.9) (xy 114.3 88.9)
 		)
 		(stroke
@@ -8444,16 +8535,6 @@
 			(type default)
 		)
 		(uuid "80807324-b2ea-46af-93c0-294726f9e725")
-	)
-	(wire
-		(pts
-			(xy 62.23 163.83) (xy 62.23 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8254662f-bacc-4400-b844-2f174eea6080")
 	)
 	(wire
 		(pts
@@ -8747,6 +8828,26 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 104.14) (xy 62.23 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c5d3e6d-ab21-4d7f-a245-27c18cd1b84a")
+	)
+	(wire
+		(pts
+			(xy 63.5 165.1) (xy 63.5 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cee8725-b1a9-49dd-aa58-5e366883deff")
+	)
+	(wire
+		(pts
 			(xy 86.36 63.5) (xy 86.36 64.77)
 		)
 		(stroke
@@ -8927,6 +9028,16 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 165.1) (xy 36.83 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af93ff36-52d1-41e2-a389-c1355466f8b6")
+	)
+	(wire
+		(pts
 			(xy 30.48 26.67) (xy 30.48 22.86)
 		)
 		(stroke
@@ -9014,6 +9125,26 @@
 			(type default)
 		)
 		(uuid "b8ed6700-e6b8-4b7f-a723-9231a58d42b5")
+	)
+	(wire
+		(pts
+			(xy 133.35 179.07) (xy 133.35 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b982c628-9d8f-4bd7-9f35-9874eacf948b")
+	)
+	(wire
+		(pts
+			(xy 120.65 179.07) (xy 123.19 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba87a86a-25d2-49b0-b381-69886c6c5204")
 	)
 	(wire
 		(pts
@@ -9154,6 +9285,16 @@
 			(type default)
 		)
 		(uuid "c82d995a-cb75-4f9c-97d3-92f267169a7a")
+	)
+	(wire
+		(pts
+			(xy 140.97 182.88) (xy 147.32 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8904235-0747-4eaa-9218-9db68f36da79")
 	)
 	(wire
 		(pts
@@ -9597,16 +9738,6 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 101.6) (xy 62.23 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f33bfc1a-e050-4921-a617-4585529c25c3")
-	)
-	(wire
-		(pts
 			(xy 52.07 93.98) (xy 52.07 96.52)
 		)
 		(stroke
@@ -9617,13 +9748,13 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 163.83) (xy 35.56 166.37)
+			(xy 130.81 179.07) (xy 133.35 179.07)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f547afab-c0b9-4323-9a9e-cadbb00fe6f0")
+		(uuid "f537a1d2-ae38-430d-96e8-573b791422d4")
 	)
 	(wire
 		(pts
@@ -9766,7 +9897,7 @@
 		(uuid "12803e88-970b-44f6-bcc6-8b83c4df8c51")
 	)
 	(label "pwm2"
-		(at 62.23 101.6 0)
+		(at 63.5 95.25 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9796,7 +9927,7 @@
 		(uuid "1f7ce3a8-3056-44b7-ba02-43554deea338")
 	)
 	(label "pwm3"
-		(at 35.56 163.83 0)
+		(at 36.83 157.48 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9834,6 +9965,16 @@
 			(justify left bottom)
 		)
 		(uuid "311797fd-4266-4ac3-8af6-0688a61afa08")
+	)
+	(label "RC_5V"
+		(at 140.97 186.69 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "363f13b2-12f9-4504-b68e-88da43fde125")
 	)
 	(label "IMU_MOSI"
 		(at 125.73 139.7 180)
@@ -9896,7 +10037,7 @@
 		(uuid "69e85ec2-e93d-4a81-8f29-fb491e6db8f7")
 	)
 	(label "pwm1"
-		(at 35.56 101.6 0)
+		(at 36.83 95.25 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10056,7 +10197,7 @@
 		(uuid "c9d7ad3f-2a5d-4724-8269-7e43395d9fa6")
 	)
 	(label "pwm4"
-		(at 62.23 163.83 0)
+		(at 63.5 157.48 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11481,6 +11622,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VBUS")
+		(at 120.65 186.69 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "22f654d2-65b2-4850-8d2f-ac86cbf2e26f")
+		(property "Reference" "#PWR034"
+			(at 124.46 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 116.84 186.6899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 120.65 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 120.65 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 120.65 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "33b113fe-73b0-448b-a6de-7df3b0d48d1b")
+		)
+		(instances
+			(project "fiddlesticks"
+				(path "/db205b5c-8a3c-4594-9aa1-fd74c96c36a7"
+					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 54.61 29.21 0)
 		(unit 1)
@@ -11758,6 +11966,144 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 36.83 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2a3d5a6d-b59d-430d-b2a2-ba5f0c4378ad")
+		(property "Reference" "R14"
+			(at 39.37 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0"
+			(at 39.37 100.3299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 35.052 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.83 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 36.83 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b2d023d4-97ff-40e0-a77c-de8dc7b30e86")
+		)
+		(pin "1"
+			(uuid "32f86937-f5ca-489c-8536-586bdd93c348")
+		)
+		(instances
+			(project ""
+				(path "/db205b5c-8a3c-4594-9aa1-fd74c96c36a7"
+					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:PMEG2010AEH")
+		(at 127 186.69 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2c3a5ed0-1b34-404f-8959-ebd0f80ac6d6")
+		(property "Reference" "D12"
+			(at 127.3175 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PMEG2010AEH"
+			(at 127.3175 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
+			(at 127 191.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PMEG2010AEH_PMEG2010AET.pdf"
+			(at 127 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "20V, 1A very low Vf MEGA Schottky barrier rectifier, SOD-123F"
+			(at 127 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0c8439a9-a020-4697-b4d7-ec74c466a4b8")
+		)
+		(pin "2"
+			(uuid "f2c54cf2-e836-4868-b6ca-be1cba96357b")
+		)
+		(instances
+			(project "fiddlesticks"
+				(path "/db205b5c-8a3c-4594-9aa1-fd74c96c36a7"
+					(reference "D12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 102.87 104.14 90)
 		(unit 1)
@@ -11962,6 +12308,74 @@
 			(project "fiddlesticks"
 				(path "/db205b5c-8a3c-4594-9aa1-fd74c96c36a7"
 					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:PMEG2010AEH")
+		(at 127 179.07 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3855482e-512a-403b-8de6-40431adeb2df")
+		(property "Reference" "D11"
+			(at 127.3175 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PMEG2010AEH"
+			(at 127.3175 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
+			(at 127 174.625 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PMEG2010AEH_PMEG2010AET.pdf"
+			(at 127 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "20V, 1A very low Vf MEGA Schottky barrier rectifier, SOD-123F"
+			(at 127 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d9a0b6b7-a5c7-449f-b8d3-338377884725")
+		)
+		(pin "2"
+			(uuid "3514ced7-b5d2-4d45-b373-cbeb0b103548")
+		)
+		(instances
+			(project "fiddlesticks"
+				(path "/db205b5c-8a3c-4594-9aa1-fd74c96c36a7"
+					(reference "D11")
 					(unit 1)
 				)
 			)
@@ -12178,6 +12592,144 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 63.5 161.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "462a2052-94eb-4f2f-b94c-c5227856edc5")
+		(property "Reference" "R17"
+			(at 66.04 160.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0"
+			(at 66.04 162.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 61.722 161.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 63.5 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 63.5 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e3b0194b-51a0-4f70-82d5-fd7f3759ba1e")
+		)
+		(pin "1"
+			(uuid "9956b6c9-3981-418c-a614-b7fdb18f9e80")
+		)
+		(instances
+			(project "fiddlesticks"
+				(path "/db205b5c-8a3c-4594-9aa1-fd74c96c36a7"
+					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:PMEG2010AEH")
+		(at 97.79 29.21 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "483e8d90-6877-4b4d-97d3-2b08a833017e")
+		(property "Reference" "D10"
+			(at 98.1075 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PMEG2010AEH"
+			(at 98.1075 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
+			(at 97.79 24.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PMEG2010AEH_PMEG2010AET.pdf"
+			(at 97.79 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "20V, 1A very low Vf MEGA Schottky barrier rectifier, SOD-123F"
+			(at 97.79 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "63e66ab8-e686-4775-bf10-3cb3e5e5cea1")
+		)
+		(pin "2"
+			(uuid "cca5c3fe-eba8-4d36-a715-01586c5a5508")
+		)
+		(instances
+			(project ""
+				(path "/db205b5c-8a3c-4594-9aa1-fd74c96c36a7"
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 217.17 21.59 0)
 		(unit 1)
@@ -12242,6 +12794,76 @@
 			(project "fiddlesticks"
 				(path "/db205b5c-8a3c-4594-9aa1-fd74c96c36a7"
 					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 36.83 161.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4d662094-ca33-4d0c-989e-49158c400658")
+		(property "Reference" "R16"
+			(at 39.37 160.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0"
+			(at 39.37 162.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 35.052 161.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.83 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 36.83 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "473f5e7f-760e-47f6-b4e2-22b4516ce59f")
+		)
+		(pin "1"
+			(uuid "88c23c90-dc46-4864-be73-0fc6545ec213")
+		)
+		(instances
+			(project "fiddlesticks"
+				(path "/db205b5c-8a3c-4594-9aa1-fd74c96c36a7"
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -12321,75 +12943,6 @@
 			(project ""
 				(path "/db205b5c-8a3c-4594-9aa1-fd74c96c36a7"
 					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:SS14")
-		(at 97.79 29.21 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "51ab7ad0-e54f-495c-9509-0f6b64b8b6fb")
-		(property "Reference" "D10"
-			(at 98.1075 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SS14"
-			(at 98.1075 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 97.79 33.655 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
-			(at 97.79 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "40V 1A Schottky Diode, SMA"
-			(at 97.79 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c91e2faf-c248-4a12-bd3d-fa0486c92a1d")
-		)
-		(pin "2"
-			(uuid "15eab83c-17b8-4331-8b89-7622555b0c2f")
-		)
-		(instances
-			(project "fiddlesticks"
-				(path "/db205b5c-8a3c-4594-9aa1-fd74c96c36a7"
-					(reference "D10")
 					(unit 1)
 				)
 			)
@@ -12891,7 +13444,7 @@
 			)
 		)
 		(property "Value" "AO3400A"
-			(at 48.26 102.8701 0)
+			(at 61.468 108.204 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14050,73 +14603,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 140.97 182.88 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a0d51c8b-fe6c-48d4-9b47-09c54da4c2ed")
-		(property "Reference" "#PWR032"
-			(at 144.78 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 137.16 182.8799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 140.97 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 140.97 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 140.97 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ca636f25-2c72-49b7-97d7-b5e4d0810ec6")
-		)
-		(instances
-			(project "fiddlesticks"
-				(path "/db205b5c-8a3c-4594-9aa1-fd74c96c36a7"
-					(reference "#PWR032")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:USB_C_Receptacle_USB2.0_16P")
 		(at 234.95 121.92 0)
 		(mirror y)
@@ -14227,6 +14713,73 @@
 			(project ""
 				(path "/db205b5c-8a3c-4594-9aa1-fd74c96c36a7"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 120.65 179.07 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a30e039e-9db1-487a-9fe5-96e1319f3198")
+		(property "Reference" "#PWR032"
+			(at 124.46 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 116.84 179.0699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 120.65 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 120.65 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 120.65 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c51bb5a2-ae3e-43c1-8552-a5459d06c24f")
+		)
+		(instances
+			(project ""
+				(path "/db205b5c-8a3c-4594-9aa1-fd74c96c36a7"
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -14389,7 +14942,7 @@
 			)
 		)
 		(property "Value" "AO3400A"
-			(at 48.26 165.1001 0)
+			(at 61.468 170.434 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15834,75 +16387,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:SS14")
-		(at 97.79 38.1 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d58acfc6-5a43-466c-b9d0-be3a7940f1d1")
-		(property "Reference" "D9"
-			(at 98.1075 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SS14"
-			(at 98.1075 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 97.79 42.545 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
-			(at 97.79 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "40V 1A Schottky Diode, SMA"
-			(at 97.79 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5324bed4-e0b6-4639-be0b-9716e57c2dda")
-		)
-		(pin "2"
-			(uuid "53d7d3f5-9a7d-47e9-a99d-bf0acb0a9a9e")
-		)
-		(instances
-			(project ""
-				(path "/db205b5c-8a3c-4594-9aa1-fd74c96c36a7"
-					(reference "D9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 22.86 22.86 0)
 		(unit 1)
@@ -16030,6 +16514,76 @@
 			(project "fiddlesticks"
 				(path "/db205b5c-8a3c-4594-9aa1-fd74c96c36a7"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 63.5 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d8b81ca2-0ca9-4ee5-b872-ffa9e88efe06")
+		(property "Reference" "R15"
+			(at 66.04 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0"
+			(at 66.04 100.3299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 61.722 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 63.5 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 63.5 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "794bbbbf-b644-4823-8f12-314f2a92e489")
+		)
+		(pin "1"
+			(uuid "64b0f675-d415-4b87-9454-b36beb8f2971")
+		)
+		(instances
+			(project "fiddlesticks"
+				(path "/db205b5c-8a3c-4594-9aa1-fd74c96c36a7"
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -16649,6 +17203,74 @@
 			(project "fiddlesticks"
 				(path "/db205b5c-8a3c-4594-9aa1-fd74c96c36a7"
 					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:PMEG2010AEH")
+		(at 97.79 38.1 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f489bffb-a48f-4496-9d6a-b6fefd75b135")
+		(property "Reference" "D9"
+			(at 98.1075 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PMEG2010AEH"
+			(at 98.1075 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
+			(at 97.79 33.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PMEG2010AEH_PMEG2010AET.pdf"
+			(at 97.79 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "20V, 1A very low Vf MEGA Schottky barrier rectifier, SOD-123F"
+			(at 97.79 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "234e16f0-f904-4b22-ac9f-75e4f4a24fb8")
+		)
+		(pin "2"
+			(uuid "35e8e631-862a-4a4d-a913-a40a6d3af0df")
+		)
+		(instances
+			(project "fiddlesticks"
+				(path "/db205b5c-8a3c-4594-9aa1-fd74c96c36a7"
+					(reference "D9")
 					(unit 1)
 				)
 			)
