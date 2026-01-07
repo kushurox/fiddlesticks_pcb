@@ -28,4 +28,3 @@ This project is open for learning purposes. Check the LICENSE file for details.
 ---
 
 > Hobby project by [kushurox](https://github.com/kushurox).  
-> If you try this, make sure to take care of safety — tiny drones can still be annoying! 😅
