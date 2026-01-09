@@ -9,7 +9,7 @@ This folder contains the schematic diagrams for the Fiddle Sticks project.
 
 ## Block Diagram
 
-![Block Diagram](fiddlesticks.svg)
+![Block Diagram](fiddlestics.svg)
 
 [View Block Diagram (raw)](https://raw.githubusercontent.com/kushurox/fiddlesticks_pcb/main/schematic_pics/fiddlesticks.svg)
 
