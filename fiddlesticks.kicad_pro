@@ -397,7 +397,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "../../Desktop/",
+    "plot_directory": "schematic_pics/",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -410,12 +410,12 @@
   },
   "sheets": [
     [
-      "db205b5c-8a3c-4594-9aa1-fd74c96c36a7",
+      "556ec640-bea9-4fdd-87e6-542e7daf24cf",
       "Root"
     ],
     [
-      "fabe692a-c418-4aa8-be44-f8a20e5f09d7",
-      "VBAT_to_5V"
+      "8cce40b3-d144-4903-8685-8d192fa06f68",
+      "motor_driver_imu"
     ]
   ],
   "text_variables": {}
