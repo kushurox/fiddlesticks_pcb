@@ -5,7 +5,7 @@
 ## About
 
 - **MCU:** STM32F411
-- **Motors:** Coreless (drone-style)
+- **Motors:** 8520 Coreless DC (brushed)
 - **Sensor:** ICM-45605 (symbol from SnapEDA — you will need to download it from SnapEDA if you want to use it)
 - **Purpose:** Hobby learning project for PCB design, firmware development, and embedded systems
 
@@ -28,4 +28,3 @@ This project is open for learning purposes. Check the LICENSE file for details.
 ---
 
 > Hobby project by [kushurox](https://github.com/kushurox).  
-> If you try this, make sure to take care of safety — tiny drones can still be annoying! 😅
