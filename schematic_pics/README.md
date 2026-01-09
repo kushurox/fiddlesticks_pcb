@@ -17,7 +17,7 @@ This folder contains the schematic diagrams for the Fiddle Sticks project.
 
 ## Power Flow Diagram
 
-![Power Flow Diagram](fiddlesticks-VBAT_to_5V.svg)
+![Power Flow Diagram](fiddlesticks-motor_driver_imu.svg)
 
 [View Power Flow Diagram (raw)](https://raw.githubusercontent.com/kushurox/fiddlesticks_pcb/main/schematic_pics/fiddlesticks-VBAT_to_5V.svg)
 
