@@ -2110,12 +2110,6 @@
 		(uuid "1baef12d-de91-46e3-9a3c-c3a5f3305289")
 	)
 	(junction
-		(at 195.58 22.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "22c17f77-d176-4c8d-a23b-0476f2609548")
-	)
-	(junction
 		(at 46.99 151.13)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3149,23 +3143,13 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 22.86) (xy 208.28 22.86)
+			(xy 187.96 22.86) (xy 208.28 22.86)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ceed7f2c-96d0-4508-b861-b00c0a501f90")
-	)
-	(wire
-		(pts
-			(xy 187.96 22.86) (xy 195.58 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cf161bc7-49da-44e1-93d6-4262f818058a")
 	)
 	(wire
 		(pts
@@ -5639,72 +5623,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 195.58 30.48 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7ea80f1e-e7ea-41c3-8c65-3f2597183233")
-		(property "Reference" "#PWR047"
-			(at 195.58 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 195.58 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 195.58 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 195.58 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 195.58 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "de614f5c-be34-44fb-a490-f9ad5fa78bec")
-		)
-		(instances
-			(project "fiddlesticks_revised"
-				(path "/556ec640-bea9-4fdd-87e6-542e7daf24cf/8cce40b3-d144-4903-8685-8d192fa06f68"
-					(reference "#PWR047")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 162.56 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6375,75 +6293,6 @@
 			(project "fiddlesticks_revised"
 				(path "/556ec640-bea9-4fdd-87e6-542e7daf24cf/8cce40b3-d144-4903-8685-8d192fa06f68"
 					(reference "#PWR044")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 195.58 26.67 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "c01827e6-22cf-4626-a252-e691c91747d2")
-		(property "Reference" "C28"
-			(at 191.77 25.3999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10u"
-			(at 191.77 27.9399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 196.5452 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 195.58 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 195.58 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0e9fbe18-5d3b-4c49-8563-859d4e9cda5d")
-		)
-		(pin "1"
-			(uuid "c12d0ae5-c2e3-4a39-8433-4fbf14740f65")
-		)
-		(instances
-			(project "fiddlesticks_revised"
-				(path "/556ec640-bea9-4fdd-87e6-542e7daf24cf/8cce40b3-d144-4903-8685-8d192fa06f68"
-					(reference "C28")
 					(unit 1)
 				)
 			)
