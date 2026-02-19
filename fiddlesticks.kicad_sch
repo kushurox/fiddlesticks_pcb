@@ -8720,7 +8720,7 @@
 		(uuid "bb35bb56-2387-4840-803a-117aba5f7aad")
 	)
 	(label "DIN+"
-		(at 88.9 177.8 180)
+		(at 88.9 180.34 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8770,7 +8770,7 @@
 		(uuid "d15a6c79-0af6-4a77-9c4e-47d840c46e3a")
 	)
 	(label "USB_FS_D+"
-		(at 110.49 177.8 0)
+		(at 110.49 180.34 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8790,7 +8790,7 @@
 		(uuid "dade86ee-5db5-41c9-8f98-19adc18b2cd0")
 	)
 	(label "USB_FS_D-"
-		(at 110.49 180.34 0)
+		(at 110.49 177.8 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8820,7 +8820,7 @@
 		(uuid "e439cd44-b5b1-4882-9e4c-3de6adfbb57b")
 	)
 	(label "DIN-"
-		(at 88.9 180.34 180)
+		(at 88.9 177.8 180)
 		(effects
 			(font
 				(size 1.27 1.27)
