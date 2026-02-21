@@ -41,3 +41,5 @@ fp-info-cache
 
 assets/*
 ./assets
+output/
+

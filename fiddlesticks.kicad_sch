@@ -6437,10 +6437,6 @@
 		(uuid "4852cdbf-072a-4443-8db0-15551f5d4a8d")
 	)
 	(no_connect
-		(at 172.72 62.23)
-		(uuid "5b777b4d-e7f9-4046-8cbe-9db61ff87042")
-	)
-	(no_connect
 		(at 134.62 69.85)
 		(uuid "84ed3b26-7e51-4250-99da-9655978ac057")
 	)
@@ -7191,6 +7187,16 @@
 			(type default)
 		)
 		(uuid "4dba13e5-23ff-45e1-be89-97a071ed3575")
+	)
+	(wire
+		(pts
+			(xy 88.9 118.11) (xy 88.9 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4df9ba07-ecb4-4ed8-b09e-77fd1de5d363")
 	)
 	(wire
 		(pts
@@ -8632,6 +8638,16 @@
 		)
 		(uuid "34d17639-84b5-4a23-a3b3-4d4cbffc3a01")
 	)
+	(label "DBG_LED"
+		(at 88.9 110.49 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3f6d0fea-e4f4-4b2f-a936-ea9c370f1c02")
+	)
 	(label "SWDIO"
 		(at 36.83 97.79 0)
 		(effects
@@ -8722,6 +8738,16 @@
 		)
 		(uuid "8d480484-4e09-4f83-a1d5-3d8c7a82bd39")
 	)
+	(label "DBG_LED"
+		(at 173.99 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "90445027-c8ce-497c-b313-59c1c87c08c1")
+	)
 	(label "RC_RX"
 		(at 200.66 77.47 180)
 		(effects
@@ -8811,16 +8837,6 @@
 			(justify right bottom)
 		)
 		(uuid "bc6576c1-86d2-48c1-a098-a76fccf648fd")
-	)
-	(label "NRF_NCS"
-		(at 173.99 62.23 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bfbf6abb-1829-40da-9650-d9a5457cba43")
 	)
 	(label "IMU_MOSI"
 		(at 181.61 40.64 180)
@@ -9948,6 +9964,73 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 88.9 128.27 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1829ab5c-70cd-4d16-b5b2-013d5e8e63ac")
+		(property "Reference" "#PWR061"
+			(at 88.9 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 88.9 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 88.9 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 88.9 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d6988dc5-f1d1-48d3-8edf-8972eccd4a13")
+		)
+		(instances
+			(project "fiddlesticks"
+				(path "/556ec640-bea9-4fdd-87e6-542e7daf24cf"
+					(reference "#PWR061")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 96.52 96.52 0)
 		(mirror y)
 		(unit 1)
@@ -10774,6 +10857,85 @@
 			(project "fiddlesticks"
 				(path "/556ec640-bea9-4fdd-87e6-542e7daf24cf"
 					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 88.9 114.3 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2575bedc-1d9a-4828-b8f1-93dbb4a42966")
+		(property "Reference" "D14"
+			(at 92.71 114.6174 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "GREEN"
+			(at 92.71 117.1574 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 88.9 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 88.9 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 88.9 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 88.9 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fa68bc34-1551-41a9-9d79-2d98c38d79b1")
+		)
+		(pin "2"
+			(uuid "5bd08384-2be2-44b7-bc96-042e81615515")
+		)
+		(instances
+			(project "fiddlesticks"
+				(path "/556ec640-bea9-4fdd-87e6-542e7daf24cf"
+					(reference "D14")
 					(unit 1)
 				)
 			)
@@ -14762,6 +14924,74 @@
 			(project ""
 				(path "/556ec640-bea9-4fdd-87e6-542e7daf24cf"
 					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 88.9 124.46 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a10d9f13-52e6-4bcc-9c17-20ed3930b50e")
+		(property "Reference" "R22"
+			(at 95.25 124.46 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 92.71 124.46 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 87.122 124.46 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 88.9 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 88.9 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f46c620e-3d47-483c-b3be-0e0bc565af49")
+		)
+		(pin "2"
+			(uuid "79c30662-89ea-4e5c-8bea-4e32a31d0112")
+		)
+		(instances
+			(project "fiddlesticks"
+				(path "/556ec640-bea9-4fdd-87e6-542e7daf24cf"
+					(reference "R22")
 					(unit 1)
 				)
 			)
